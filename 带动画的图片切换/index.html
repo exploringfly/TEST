@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/change.css">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function (){
+            var zuo=($('.square').width()-$('.box').width())/2;
+            var shang=($('.square').height()-$('.box').height())/2;
+
+            $('.box.box1').css({'left':zuo,'top':shang});
+
+
+            $(".box").stop().mouseenter(function () {
+                if(!$('.box').is(':animated')){
+                    if(!$(this).hasClass('box1')) {
+                        var x = $(this).position().left;
+                        var y = $(this).position().top;
+
+                        var xx = $('.box1').position().left;
+                        var yy = $('.box1').position().top;
+
+                        $('.box1').removeClass('box1').stop().animate({
+                            "left": x,
+                            "top": y,
+                        }, 1000);
+
+                        $(this).addClass('box1').stop().animate({
+                            "left": xx,
+                            "top": yy,
+                        }, 1000);
+                    }
+                }
+//                console.log($('div'));
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="square">
+    <div class="box"><img src="img/1.jpg" alt="图片不存在"></div>
+    <div class="box"><img src="img/2.jpg" alt="图片不存在"></div>
+    <div class="box"><img src="img/3.jpg" alt="图片不存在"></div>
+    <div class="box"><img src="img/45.png" alt="图片不存在"></div>
+    <div class="box box1"><img src="img/home.png" alt="图片不存在"></div>
+</div>
+</body>
+</html>
