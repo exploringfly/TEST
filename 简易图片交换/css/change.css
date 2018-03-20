@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.square {
+    width: 800px;
+    height: 452px;
+    border: 2px solid #ff4af4;
+    margin: 200px auto;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #ffbfd0;
+    position: relative;
+}
+
+.box {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    border: 1px dotted #333333;
+    float: left;
+    overflow: hidden;
+}
+
+.box1 {
+    width: 400px;
+    height: 226px;
+    border: 1px dashed #333333;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin: -113px 0 0 -200px;
+    background-color: #0AA770;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+}
