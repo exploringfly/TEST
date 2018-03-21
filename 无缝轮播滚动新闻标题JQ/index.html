@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/new.css">
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function () {
+            var c = 0;
+            var timer = setInterval(function () {
+                c++;
+                if(c == 4){
+                    $(".box ul").css({"top":'0px'});
+                    c = 1;
+                };
+                var t = c*-35;
+                $(".box ul").stop().animate({'top':t+'px'},1000);
+            },1000);
+            $(".box ul").stop().mouseenter(function () {
+                clearInterval(timer);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li style="background-color: #ffc9e6">毛毛很可爱</li>
+        <li style="background-color: #93faba">萌萌哒</li>
+        <li style="background-color: #f850fa">美美哒</li>
+        <li style="background-color: #35dcff">酷酷滴</li>
+        <li style="background-color: #ffc9e6">我很可爱</li>
+        <li style="background-color: #ffc9e6">毛毛很可爱</li>
+
+    </ul>
+</div>
+</body>
+</html>

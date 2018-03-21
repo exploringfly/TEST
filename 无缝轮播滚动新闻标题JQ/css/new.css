@@ -1,0 +1,26 @@
+* {
+      margin: 0;
+      padding: 0;
+  }
+
+.box {
+    width: 400px;
+    height: 35px;
+    position: relative;
+    margin: 20px auto;
+    border: 2px solid #4ecc0e;
+    overflow: hidden;
+}
+.box ul {
+    width: 400px;
+    position: absolute;
+    top: 0;
+}
+
+.box ul li {
+    list-style: none;
+    width: 400px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+}
