@@ -1,0 +1,15 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+	opacity: 0.3;
+	filter:alpha(opacity: 30);
+	opacity: 0.3;
+	background-color: #800080;
+}

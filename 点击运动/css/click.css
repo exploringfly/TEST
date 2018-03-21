@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#box1 {
+	width: 100px;
+	height: 100px;
+	background-color: #00FFFF;
+	position: absolute;
+	left: 600px;
+	top: 0;
+}
+
+#box2 {
+	width: 1px;
+	position: absolute;
+	height: 300px;
+	left: 100px;
+	top: 0;
+	background-color: black;
+}
+
+#box3 {
+	width: 1px;
+	position: absolute;
+	height: 300px;
+	left: 300px;
+	background-color: black;
+	top: 0;
+}

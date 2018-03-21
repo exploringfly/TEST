@@ -1,0 +1,16 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 2000px;
+}
+
+#box1 {
+	width: 150px;
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #DEF2FC;
+}
